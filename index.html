@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FreshMint Cafe 🍣</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .soy-sauce {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: url('https://www.dropbox.com/scl/fi/mpy3zbpzbng875x2f9mrh/f293d90bd9b6cf593d6b1c00bbc87689_transfer_2025-10-06_021036_transfer_2025-10-06_021354.png?rlkey=dmqhdjq4j3xy6qg83yiql4iqu&st=etfjs66n&raw=1');
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #ffeaa7;
+            border-radius: 10px;
+        }
+        .price {
+            font-weight: bold;
+            color: #e17055;
+            margin-left: auto;
+        }
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="soy-sauce"></div>
+            <h1>🍣 FreshMint Cafe</h1>
+            <p>С любовью к кодерам и роллам!</p>
+        </div>
+
+        <div class="menu">
+            <div class="menu-item">
+                <span>🎯 Маки с лососем</span>
+                <span class="price">350 руб.</span>
+            </div>
+            <div class="menu-item">
+                <span>🔥 Спановый сет</span>
+                <span class="price">1200 руб.</span>
+            </div>
+            <div class="menu-item">
+                <span>💻 Филадельфия</span>
+                <span class="price">450 руб.</span>
+            </div>
+        </div>
+
+        <center>
+            <a href="https://wa.me/79966761871?text=Хочу%20заказать%20из%20FreshMint!" class="whatsapp-btn">
+                📱 Заказать в WhatsApp
+            </a>
+        </center>
+    </div>
+
+    <script>
+        // Админ-панель (можно спрятать в будущем)
+        function adminLogin() {
+            const password = prompt("Введите пароль админа:");
+            if (password === "sushi_master_2024") {
+                alert("Добро пожаловать, шеф! 🍣");
+                // Здесь можно добавить изменение цен
+            }
+        }
+        
+        // Секретная комбинация для админа
+        document.addEventListener('keypress', function(e) {
+            if (e.key === '§') { // или другая клавиша
+                adminLogin();
+            }
+        });
+    </script>
+</body>
+</html>
